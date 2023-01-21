@@ -1,0 +1,48 @@
+
+  .darkMode-container{
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    width: 3rem;
+    height: 1.3rem;
+    /* background-color:#111; */
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem;
+    position: relative;
+    transform: scale(1.5);
+
+  }
+  
+  .ball {
+    width: 1.5rem;
+    height: 1.3rem;
+    /* background-color: white; */
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
+  
+  .moon {
+    color: pink;
+  }
+  
+  .sun {
+    color: yellow;
+  }
